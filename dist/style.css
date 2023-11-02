@@ -1040,6 +1040,10 @@ video {
   background-image: url('/pics/hero.jpg');
 }
 
+.bg-\[url\(\'\.\/dist\/images\/theme_image\.svg\'\)\] {
+  background-image: url('./dist/images/theme_image.svg');
+}
+
 .bg-cover {
   background-size: cover;
 }
