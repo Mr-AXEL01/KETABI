@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>KETABI</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
                     <img src="./dist/images/logo_ketabi.png" alt="ketabi logo" width="200px">
                 </div>
                 <div class="py-3 hidden md:flex space-x-6">
-                    <a href="index.html" class="text-slate-900 hover:text-slate-500">Home</a>
+                    <a href="index.html" class="text-slate-900 hover:text-slate-500 ">Home</a>
                     <a href="library.html" class="text-slate-900 hover:text-slate-500">Library</a>
                     <a href="#" class="text-slate-900 hover:text-slate-500">Blog</a>
                     <a href="about-us.html" class="text-slate-900 hover:text-slate-500">About Us</a>
@@ -28,59 +30,227 @@
         </nav>
     </header>
 
-    <footer>
-        <div  class="p-10 bg-gray-800 text-gray-200">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-                    <div class="mb-5">
-                        <h4 class="text-2xl pb-4">Company</h4>
-                        <p class="text-gray-500">
-                            A123 Lost street <br>
-                        Meknes, PB 243233
-                        Morocco <br><br>
-                        <strong>Phone: </strong>+212 624-900651 <br>
-                        <strong>Email: </strong>team@ketabistore <br>
-                        </p>
+            <section class="max-h-max">
+
+                <div class=" text-white h-[702px] h- py-20 bg-[url('dist/images/contact-img.jpg')] bg-cover bg-center">
+                    
+                    <p class="mt-48 text-center flex justify-center text-8xl">Contact </p>
+                    
+                    <div class="flex justify-center mt-8 gap-8">  
+                        <a href="index.html" class="text-white hover:text-slate-500">Home</a>
+                        <a href="about-us.html"text-white hover:text-slate-500 ">About Us</a>
                     </div>
-                    <div class="mb-5">
-                        <h4 class="pb-4">Useful Links</h4>
-                        <ul class="text-gray-500">
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Books</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">About Us</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Terms of Services</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Privacy policy</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Author</a></li>
-                        </ul>
-                    </div>
-                    <div class="mb-5">
-                        <h4 class="pb-4">Our Collection</h4>
-                        <ul class="text-gray-500">
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Science</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Thriller</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Drama</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Biographie</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Comedy</a></li>
-                        </ul>
-                    </div>
-                    <div class="mb-5">
-                        <h4 class="pb-4">Join Our Newsletter</h4>
-                        <p class="text-gray-500">Join 37,000+ others and never miss out on new tips, tutorials, and more</p>
-                        <form class="flex flex-row flex-wrap">
-                            <input type="text" class="text-gray-500 w-2/3 p-2 focus:border-yellow-500" placeholder="email@example.com">
-                            <button class="p-2 w-1/3 bg-sky-500 text-white hover:bg-sky-600">Subscribe</button>
-                        </form>
+                </div>
+                
+            </section>
+        
+          
+<section class="bg-gray-100">
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+        <div class="lg:col-span-2 lg:py-12">
+            <p class="text-3xl mb-4 font-bold text-sky-600">Contact Us</p>
+          <p class="max-w-xl text-lg">
+            At the same time, the fact that we are wholly owned and totally
+            independent from manufacturer and other group control gives you
+            confidence that we will only recommend what is right for you.
+          </p>
+  
+          <div class="mt-8">
+            <a href="" class="text-2xl font-bold text-sky-600">
+              +2126060606060
+            </a>
+  
+            <address class="mt-2 not-italic">
+              282 Kevin Brook, Imogeneborough, CA 58517
+            </address>
+          </div>
+        </div>
+  
+        <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <form action="" class="space-y-4" id="form">
+            <div>
+              <label class="sr-only" for="name">Name</label>
+              <input
+                class=" border border-solid w-full rounded-lg p-3 text-sm"
+                placeholder="Name"
+                type="text"
+                id="nameInput"
+              />
+            </div>
+  
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  class=" border border-solid w-full rounded-lg p-3 text-sm"
+                  placeholder="Email address"
+                  type="email"
+                  id="emailInput"
+                />
+              </div>
+  
+              <div>
+                <label class="sr-only" for="phone">Phone</label>
+                <input
+                  class="border border-solid	w-full rounded-lg p-3 text-sm"
+                  placeholder="Phone Number"
+                  type="tel"
+                  id="NumberInput"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="sr-only" for="message">Message</label>
+  
+              <textarea
+                class=" resize-none border border-solid w-full rounded-lg p-3 text-sm"
+                placeholder="Message"
+
+                rows="8"
+                id="messageInput"
+              ></textarea>
+            </div>
+  
+            <div class="mt-4">
+              <button
+                type="submit"
+                class="inline-block w-full rounded-md bg-sky-500 hover:bg-sky-600 px-5 py-3 hover:px-6 font-medium text-white sm:w-auto"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <footer class="mt-14">
+            <div  class="p-10 bg-gray-800 text-gray-200">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                        <div class="mb-5">
+                            <h4 class="text-2xl pb-4">Company</h4>
+                            <p class="text-gray-500">
+                                A123 Lost street <br>
+                            Meknes, PB 243233
+                            Morocco <br><br>
+                            <strong>Phone: </strong>+212 624-900651 <br>
+                            <strong>Email: </strong>team@ketabistore <br>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="pb-4">Useful Links</h4>
+                            <ul class="text-gray-500">
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Books</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">About Us</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Terms of Services</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Privacy policy</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Author</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="pb-4">Our Collection</h4>
+                            <ul class="text-gray-500">
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Science</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Thriller</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Drama</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Biographie</a></li>
+                                <li class="pb-4"><a href="#" class="hover:text-yellow-500">Comedy</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="pb-4">Join Our Newsletter</h4>
+                            <p class="text-gray-500">Join 37,000+ others and never miss out on new tips, tutorials, and more</p>
+                            <form class="flex flex-row flex-wrap">
+                                <input type="text" class="text-gray-500 w-2/3 p-2 focus:border-yellow-500" placeholder="email@example.com">
+                                <button class="p-2 w-1/3 bg-sky-500 text-white hover:bg-sky-600">Subscribe</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="w-full bg-gray-900 text-gray-500 px-10">
-            <div class="text-center">
-                <div>
-                    Copyright <strong><span>company</span></strong>. All rights Reserved
+            <div class="w-full bg-gray-900 text-gray-500 px-10">
+                <div class="text-center">
+                    <div>
+                        Copyright <strong><span>company</span></strong>. All rights Reserved
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer
-    
+          </footer>
+
+        <script>
+          const form = document.getElementById("form");
+          const nameInput = document.getElementById("nameInput");
+          const lastNameInput = document.getElementById("NumberInput");
+          const emailInput = document.getElementById("emailInput");
+          const messageInput = document.getElementById("messageInput");
+  
+          const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+$/;
+          const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  
+          let nameValue = nameInput.value.trim();
+          let lastNameValue = lastNameInput.value.trim();
+          let emailValue = emailInput.value.trim();
+          let messageValue = messageInput.value.trim();
+  
+          function testInput(){
+              nameInput.classList.remove("border-red-500");
+              lastNameInput.classList.remove("border-red-500");
+              emailInput.classList.remove("border-red-500");
+              messageInput.classList.remove("border-red-500");
+  
+              nameValue = nameInput.value.trim();
+              lastNameValue = lastNameInput.value.trim();
+              emailValue = emailInput.value.trim();
+              messageValue = messageInput.value.trim();
+  
+              let flag = true;
+  
+              if (!nameRegex.test(nameValue)) {
+                  nameInput.classList.add("border-red-500");
+                  flag = false;
+              }
+  
+              if (!nameRegex.test(lastNameValue)) {
+                  lastNameInput.classList.add("border-red-500");
+                  flag = false;
+              }
+  
+              if (!emailRegex.test(emailValue)) {
+                  emailInput.classList.add("border-red-500");
+                  flag = false;
+              }
+              
+  
+              if (messageValue == 0) {
+                  messageInput.classList.add("border-red-500");
+                  flag = false;
+              }
+              return flag;
+          }
+  
+          form.addEventListener("submit", (e) => {
+              e.preventDefault();
+              if(testInput()) form.submit();
+              else Swal.fire(
+                '',
+                'Veuillez corriger ou entrer tous les Input!',
+                'error'
+              )
+              // else form.submit();
+                  // alert("Formulaire soumis avec succès!");
+              // else
+              //     alert("Veuillez entrer tous les Input!");
+  
+          });
+  
+          nameInput.addEventListener('change',testInput);
+          lastNameInput.addEventListener('change',testInput);
+          emailInput.addEventListener('change',testInput);
+          messageInput.addEventListener('change',testInput);
+      </script>
 </body>
 </html>
