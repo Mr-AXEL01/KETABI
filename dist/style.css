@@ -943,6 +943,10 @@ video {
   width: 100vw;
 }
 
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1135,14 +1139,14 @@ video {
   border-width: 1px;
 }
 
-.border-y-4 {
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-}
-
 .border-y-2 {
   border-top-width: 2px;
   border-bottom-width: 2px;
+}
+
+.border-y-4 {
+  border-top-width: 4px;
+  border-bottom-width: 4px;
 }
 
 .border-l-2 {
@@ -1161,20 +1165,16 @@ video {
   --tw-bg-opacity: 0.75;
 }
 
+.bg-\[url\(\'\.\.\/dist\/images\/theme_image\.svg\'\)\] {
+  background-image: url('../dist/images/theme_image.svg');
+}
+
 .bg-\[url\(\'\.\/dist\/images\/hero\.jpg\'\)\] {
   background-image: url('./dist/images/hero.jpg');
 }
 
 .bg-\[url\(\'\/dist\/images\/theme_image\.svg\'\)\] {
   background-image: url('/dist/images/theme_image.svg');
-}
-
-.bg-\[url\(\'\.\/dist\/images\/theme_image\.svg\'\)\] {
-  background-image: url('./dist/images/theme_image.svg');
-}
-
-.bg-\[url\(\'\.\.\/dist\/images\/theme_image\.svg\'\)\] {
-  background-image: url('../dist/images/theme_image.svg');
 }
 
 .bg-cover {
