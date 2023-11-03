@@ -13,13 +13,12 @@ const title = document.getElementById('title');
 const descr = document.getElementById('description');
 const submit = document.getElementById('btn-form-submit');
 
-// btn.addEventListener('click', ()=> {
-//     if (cart.style.display == 'none'){
-//         cart.style.display = 'block'
-//     }else{
-//         cart.style.display = 'none'
-//     }
-// })
+btn.addEventListener('click', ()=> {
+        cart.style.display = 'block';
+        close.addEventListener('click', ()=> {
+            cart.style.display = 'none';
+        })
+})
 
 buton.addEventListener('click', ()=> {
     if (booksForm.style.display == 'none'){
@@ -47,12 +46,45 @@ buton.addEventListener('click', ()=> {
 
 const aff = document.getElementById('affiche');
 
-aff.addEventListener('click', ()=> {
-    if (booksForm.style.display == 'none'){
-        booksForm.style.display = 'block';
-        books.style.display = 'none';
-    }else{
-        booksForm.style.display = 'none'
-        books.style.display = 'block'
-    }
+// aff.addEventListener('click', ()=> {
+//     if (booksForm.style.display == 'none'){
+//         booksForm.style.display = 'block';
+//         books.style.display = 'none';
+//     }else{
+//         booksForm.style.display = 'none'
+//         books.style.display = 'block'
+//     }
+// })
+
+
+
+// RegEx
+
+const Regex = {
+    name : /^[a-zA-Z\s]{3,20}$/,
+    number: /^[0-9]{16}$/
+}
+
+let putPays = document.querySelectorAll('#putPay');
+const payBtn = document.getElementById('payBtn');
+const nameError = document.getElementById('nameError');
+const cardError = document.getElementById('cardError');
+
+putPays.forEach(putPay => {
+    payBtn.addEventListener('click', ()=> {
+        console.log('adding');
+        if (putPay.value === "") {
+            nameError.textContent = 'Name is required';
+        }
+        else if (Regex.name.test(putPay.value)) {
+            nameError.textContent = 'Invalid name';
+        }
+        else if (Regex.number.test(putPay.value)) {
+            cardError.textContent = 'Invalid card number';
+        }
+        else {
+            nameError.textContent = '';
+            cardError.textContent = '';
+        }
+    })
 })
