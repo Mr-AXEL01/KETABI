@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/style.css">
-    <title>KETABI</title>
+    <!-- <link rel="stylesheet" href="./dist/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>KTABI</title>
 </head>
 <body>
     <header>
@@ -40,80 +41,123 @@
             </div>
         </section>
         <section id="topTrendingBook">
-            <div class="container  mx-auto px-6 flex justify-between">
-                <div class="topTop w-1/2 leading-10">
+            <div class="container  mx-auto px-6 flex justify-between max-md:flex-col-reverse">
+                <div class="topTop flex flex-col justify-center w-1/2 leading-10 max-md:w-full max-md:items-center max-md:my-3">
                     <img src="./dist/images/book1.svg" alt="RUCKSACK PIC">
-                    <div class="w-[70%] px-4 flex justify-between">
+                    <div class="w-[80%] px-4 flex justify-between max-md:justify-evenly max-md:w-[100%]">
                         <h5 class="text-xl text-gray-950">RUCKSACK</h5>
                         <p>$13.10</p>
                     </div>
                     <br>
-                    <a href="#" class="text-2xl  px-6  self-center  border-solid border-y-4  md:self-start text-black  hover:text-gray-700 justify-center">Buy Now</a>
+                    <a href="#" class="text-2xl  px-6  self-start  border-solid border-y-4 text-black  hover:text-gray-700 justify-center">Buy Now</a>
                 </div>
-                <div class="w-1/2 my-9 justify-center leading-10">
-                    <h2 class="text-4xl font-bold ">Top Trending Book 2023</h2>
+                <div class="w-1/2 my-9 justify-center leading-10 max-md:w-full">
+                    <h2 class="text-4xl font-bold max-md:text-3xl">Top Trending Book 2023</h2>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                     <div>
-                        <div class="topList flex justify-around mx-auto my-10">
+                        <div class="topList flex justify-around mx-auto my-10 max-md:justify-between">
                             <div class="bookCard w-40">
                                 <img src="./dist/images/book1.svg" alt="book1" width="160px">
                                 <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
                             </div>
                             <div class="bookCard w-40">
                                 <img src="./dist/images/book1.svg" alt="book1" width="160px">
                                 <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
                             </div>
                             <div class="bookCard w-40">
                                 <img src="./dist/images/book1.svg" alt="book1" width="160px">
                                 <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
-                            </div>
-                        </div>
-                        <div class="topList flex justify-around mx-auto my-10">
-                            <div class="bookCard w-40">
-                                <img src="./dist/images/book1.svg" alt="book1" width="160px">
-                                <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
-                            </div>
-                            <div class="bookCard w-40">
-                                <img src="./dist/images/book1.svg" alt="book1" width="160px">
-                                <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
-                            </div>
-                            <div class="bookCard w-40">
-                                <img src="./dist/images/book1.svg" alt="book1" width="160px">
-                                <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
                             </div>
                         </div>
-                        <div class="topList flex justify-around mx-auto my-10">
+                        <div class="topList flex justify-around mx-auto my-10 max-md:justify-between">
                             <div class="bookCard w-40">
                                 <img src="./dist/images/book1.svg" alt="book1" width="160px">
                                 <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
                             </div>
                             <div class="bookCard w-40">
                                 <img src="./dist/images/book1.svg" alt="book1" width="160px">
                                 <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
                             </div>
                             <div class="bookCard w-40">
                                 <img src="./dist/images/book1.svg" alt="book1" width="160px">
                                 <p>$13.10</p>
-                                <h5>Creal Vol.14(2019)</h5>
-                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center">ADD TO CART</a>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
                             </div>
                         </div>
+                        <div class="topList flex justify-around mx-auto my-10 max-md:justify-between">
+                            <div class="bookCard w-40">
+                                <img src="./dist/images/book1.svg" alt="book1" width="160px">
+                                <p>$13.10</p>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
+                            </div>
+                            <div class="bookCard w-40">
+                                <img src="./dist/images/book1.svg" alt="book1" width="160px">
+                                <p>$13.10</p>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
+                            </div>
+                            <div class="bookCard w-40">
+                                <img src="./dist/images/book1.svg" alt="book1" width="160px">
+                                <p>$13.10</p>
+                                <h5 class="max-md:text-sm">Creal Vol.14(2019)</h5>
+                                <a href="#" class="text-xs py-2 px-6  self-center  underline  md:self-start text-black  hover:text-gray-700 justify-center max-md:text-[9px]">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Authors"class="bg-[url('../dist/images/theme_2.svg')] bg-cover h-[70vh] max-md:h-[100%] flex items-center justify-center">
+            <div class="container flex flex-col items-center">
+                <h4 class="font-bold text-4xl my-3 text-gray-950">What Our Authors Say</h4>
+                <br>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, illum deleniti.
+                    Autem exercitationem vero nemo earum ducimus magnam similique quo culpa nihil id iste, <br> voluptates a
+                    maxime labore magni quibusdam nisi assumenda doloribus odit aliquid aut sint facilis amet architecto.</p>
+                <div class="cards flex my-10 max-md:flex-col">
+                    <div
+                        class="card mx-auto w-[20%] max-md:w-full max-md:my-4 max-md:px-4 text-center flex flex-col-reverse bg-gray-300">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo quis consequuntur eos dignissimos
+                            illum corporis obcaecati suscipit dolorum sequi.</p>
+                        <img src="./dist/images/authors/author1.svg" alt="author">
+                        <p class="text-lg">Madrid</p>
+                        <p class="text-lg">Fred Rodriquez</p>
+                    </div>
+                    <div
+                        class="card mx-auto w-[20%] max-md:w-full max-md:my-4 max-md:px-4 text-center flex flex-col-reverse bg-gray-300">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo quis consequuntur eos dignissimos
+                            illum corporis obcaecati suscipit dolorum sequi.</p>
+                        <img src="./dist/images/authors/author1.svg" alt="author">
+                        <p>Madrid</p>
+                        <p>Fred Rodriquez</p>
+                    </div>
+                    <div
+                        class="card mx-auto w-[20%] max-md:w-full max-md:my-4 max-md:px-4 text-center flex flex-col-reverse bg-gray-300">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo quis consequuntur eos dignissimos
+                            illum corporis obcaecati suscipit dolorum sequi.</p>
+                        <img src="./dist/images/authors/author1.svg" alt="author">
+                        <p>Madrid</p>
+                        <p>Fred Rodriquez</p>
+                    </div>
+                    <div
+                        class="card mx-auto w-[20%] max-md:w-full max-md:my-4 max-md:px-4 text-center flex flex-col-reverse bg-gray-300">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo quis consequuntur eos dignissimos
+                            illum corporis obcaecati suscipit dolorum sequi.</p>
+                        <img src="./dist/images/authors/author1.svg" alt="author">
+                        <p>Madrid</p>
+                        <p>Fred Rodriquez</p>
                     </div>
                 </div>
             </div>
@@ -136,29 +180,29 @@
                     <div class="mb-5">
                         <h4 class="pb-4">Useful Links</h4>
                         <ul class="text-gray-500">
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Books</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">About Us</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Terms of Services</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Privacy policy</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Author</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Books</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">About Us</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Terms of Services</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Privacy policy</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Author</a></li>
                         </ul>
                     </div>
                     <div class="mb-5">
                         <h4 class="pb-4">Our Collection</h4>
                         <ul class="text-gray-500">
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Science</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Thriller</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Drama</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Biographie</a></li>
-                            <li class="pb-4"><a href="#" class="hover:text-yellow-500">Comedy</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Science</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Thriller</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Drama</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Biographie</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Comedy</a></li>
                         </ul>
                     </div>
                     <div class="mb-5">
                         <h4 class="pb-4">Join Our Newsletter</h4>
                         <p class="text-gray-500">Join 37,000+ others and never miss out on new tips, tutorials, and more</p>
                         <form class="flex flex-row flex-wrap">
-                            <input type="text" class="text-gray-500 w-2/3 p-2 focus:border-yellow-500" placeholder="email@example.com">
-                            <button class="p-2 w-1/3 bg-yellow-500 text-white hover:bg-yellow-600">Subscribe</button>
+                            <input type="text" class="text-gray-500 w-2/3 p-2 focus:border-sky-500" placeholder="email@example.com">
+                            <button class="p-2 w-1/3 bg-sky-500 text-white hover:bg-sky-600">Subscribe</button>
                         </form>
                     </div>
                 </div>
