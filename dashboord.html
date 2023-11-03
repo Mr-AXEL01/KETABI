@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboord</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="shadow-md shadow-black/5">
+        <nav class="container mx-auto p-6 ">
+            <div class="flex item-center justify-around">
+                <div>
+                    <img src="./dist/images/logo_ketabi.png" alt="ketabi logo" width="200px">
+                </div>
+                <div class="py-3 hidden md:flex space-x-6">
+                    <a href="index.html" class="text-slate-900 hover:text-slate-500">Home</a>
+                    <a href="library.html" class="text-slate-900 hover:text-slate-500">Library</a>
+                    <a href="dashboord.html" class="text-slate-900 hover:text-slate-500">Dasboord</a>
+                    <a href="about-us.html" class="text-slate-900 hover:text-slate-500">About Us</a>
+                    <a href="contact.html" class="text-slate-900 hover:text-slate-500">Contact Us</a>
+                </div>
+                <div class="py-4">
+                    <a href="#"><img src="./dist/icons/cart-shopping-solid.svg" width="25px" alt="basket logo"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+        <!-- <section id="slidebar">
+            <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-7">
+                <a href="index.html" class="flex items-center pb-4 border-b border-b-gray-800">
+                    <img src="./dist/images/logo_ketabi.png" alt="KTABI" width="180px">
+                </a>
+                <ul class="mt-4">
+                    <li class="mb-1 group active">
+                        <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:bg-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 ">
+                            <span class="text-sm">Dashboord</span>
+                        </a>
+                    </li>
+                    <li class="mb-1 group">
+                        <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:bg-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100  sidebar-dropdown-toggle">
+                            <span class="text-sm">Categories</span>
+                            <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                        </a>
+                        <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                            <li class="mb-4">
+                                <a href="#" class="text-gray-300 text-sm flex items-center hover:text-white before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Add</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="text-gray-300 text-sm flex items-center hover:text-white before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Edit</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="text-gray-300 text-sm flex items-center hover:text-white before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Remove</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mb-1 group">
+                        <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:bg-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100  sidebar-dropdown-toggle">
+                            <span class="text-sm">Books</span>
+                            <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                        </a>
+                        <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                            <li class="mb-4">
+                                <a href="#" class="text-gray-300 text-sm flex items-center hover:text-white before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Add</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="text-gray-300 text-sm flex items-center hover:text-white before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Edit</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="text-gray-300 text-sm flex items-center hover:text-white before:content-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Remove</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </section> -->
+
+        <main>
+            <div class="px-6 flex items-center h-24 w-full">
+               <div class="p-7 btm-left-box w-1/2 h-full flex items-center">
+                <button id="add-btn" class="mx-2 p-3 text-lg text-gray-800 bg-gray-200 rounded-full"><i class="ri-add-circle-line"></i> &nbsp; Add Book</button>
+                <button class="mx-2 p-3 text-lg text-gray-800 bg-gray-200 rounded-full"><i class="ri-eraser-fill"></i> &nbsp; Clear Filtering</button>
+               </div>
+               <div class="btm-right-box p-2 w-1/2 h-full flex items-center justify-between">
+                <i class="ri-search-eye-line text-3xl"></i>
+                <input type="text" id="bookId" placeholder="Enter Book ID" class="p-2 w-4/5 outline-none  border-b-4 rounded-md  border-gray-400">
+                <button class="mx-2 p-3 text-lg text-gray-800 bg-gray-200 rounded-full">Search</button>
+               </div>
+            </div>
+            <div class="table_box p-7 w-full ">
+                <table class="w-full border-2 border-black">
+                    <tr>
+                        <th class="p-2  border-r-2 border-black">ID</th>
+                        <th class="p-2  border-r-2 border-black">Cover</th>
+                        <th class="p-2  border-r-2 border-black">Title</th>
+                        <th class="p-2  border-r-2 border-black">ISBN</th>
+                        <th class="p-2  border-r-2 border-black">categorie</th>
+                        <th class="p-2  border-r-2 border-black">Descreption</th>
+                        <th class="p-2  border-r-2 border-black">Price</th>
+                        <th class="p-2  border-r-2 border-black">Action</th>
+                    </tr>
+                    <tbody id="table-data">
+
+                    </tbody>
+                </table>
+            </div>
+            <div id="modal" class="hidden w-2/3 fixed  h-[60%] top-[50%] left-1/2 transform translate-x-[-50%] translate-y-[-50%] flex border-t-[20px] border-groove border-gray-900   z-[1] bg-gray-400">
+                <button id="close-btn"><i class="ri-close-circle-fill text-red-500 absolute right-[-15px] text-4xl p-2 top-[-40px]"></i></button>
+                <div class="left-modal w-1/3 h-full">
+                    <div class="img-box relative w-full h-[300px] flex p-6">
+                        <img src="./dist/images/coverImg/book-cover.png" alt="cover" class="w-50 h-41 p-4">
+                        <i class="ri-add-circle-fill p-2 absolute right-16 top-20 text-3xl"></i>
+                        <input id="upload-field" type="file" class="w-10 h-10 absolute right-16 top-20 opacity-0">
+                    </div>
+                </div>
+                <div class="right-modal w-2/3 h-full border-l-4 border-groove border-gray-900">
+                    <form id="register-form">
+                        <div class="input-box w-full flex justify-between">
+                            <label for="title" class="text-xl font my-5 mx-3">Title</label>
+                            <input type="text" id="title" class="w-2/3 m-5 p-3 border-b-4 border-sky-800 outline-0">
+                        </div>
+                        <div class="input-box w-full flex justify-between">
+                            <label for="isbn" class="text-xl font my-5 mx-3">ISBN</label>
+                            <input type="text" id="isbn" class="w-2/3 m-5 p-3 border-b-4 border-sky-800 outline-0">
+                        </div>
+                        <div class="input-box w-full flex justify-between">
+                            <label for="categorie" class="text-xl font my-5 mx-3">categorie</label>
+                            <input type="text" id="categorie" class="w-2/3 m-5 p-3 border-b-4 border-sky-800 outline-0">
+                        </div>
+                        <div class="input-box w-full flex justify-between">
+                            <label for="descreption" class="text-xl font my-5 mx-3">Descreption</label>
+                            <input type="text" id="descreption" class="w-2/3 m-5 p-3 border-b-4 border-sky-800 outline-0">
+                        </div>
+                        <div class="input-box w-full flex justify-between">
+                            <label for="price" class="text-xl font my-5 mx-3">Price</label>
+                            <input type="text" id="price" class="w-2/3 m-5 p-3 border-b-4 border-sky-800 outline-0">
+                        </div>
+                        <div class="input-box-button flex justify-between">
+                            <button id="register-btn" class="m-10 p-3 text-lg text-gray-800 bg-green-800 hover:bg-green-500 hover:text-white rounded-full">Register</button>
+                            <button class="m-10 p-3 text-lg text-gray-800 bg-sky-800 hover:bg-sky-500 hover:text-white rounded-full">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    <!-- <footer>
+        <div  class="p-10 bg-gray-800 text-gray-200">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                    <div class="mb-5">
+                        <h4 class="text-2xl pb-4">Company</h4>
+                        <p class="text-gray-500">
+                            A123 Lost street <br>
+                        Meknes, PB 243233
+                        Morocco <br><br>
+                        <strong>Phone: </strong>+212 624-900651 <br>
+                        <strong>Email: </strong>team@ketabistore <br>
+                        </p>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="pb-4">Useful Links</h4>
+                        <ul class="text-gray-500">
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Books</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">About Us</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Terms of Services</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Privacy policy</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Author</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="pb-4">Our Collection</h4>
+                        <ul class="text-gray-500">
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Science</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Thriller</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Drama</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Biographie</a></li>
+                            <li class="pb-4"><a href="#" class="hover:text-sky-500">Comedy</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="pb-4">Join Our Newsletter</h4>
+                        <p class="text-gray-500">Join 37,000+ others and never miss out on new tips, tutorials, and more</p>
+                        <form class="flex flex-row flex-wrap">
+                            <input type="text" class="text-gray-500 w-2/3 p-2 focus:border-sky-500" placeholder="email@example.com">
+                            <button class="p-2 w-1/3 bg-sky-500 text-white hover:bg-sky-600">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-gray-900 text-gray-500 px-10">
+            <div class="text-center">
+                <div>
+                    Copyright <strong><span>company</span></strong>. All rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+<script src="./dist/main.js"></script>
+</body>
+</html>
